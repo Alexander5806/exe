@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        
+        .text {
+            font-size: 5px; 
+        }
+        .gif {
+            display: none;
+            margin: 1px ;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>НЕ ДИВИТИСЯ</h1>
+
+    </header>
+    
+    <main>
+        <h2></h2>
+        <video id="video.mp4" width="640" height="360" controls>
+            <source src="video.mp4" type="video/mp4">
+            глмроми
+        </video>
+        <p class="ghj" id="ghj">не робіть цього</p>
+        <a href="body.html"><p class="text">1</p></a>
+        <img id="7285a655445f14bd3c368af66035952f_w200.gif" src="7285a655445f14bd3c368af66035952f_w200.gif" alt="тут мала бути gif" class="gif">
+    </main>
+    
+    <footer>
+        <p></p>
+    </footer>
+    <script>
+        var video = document.getElementById('video.mp4');
+        var message = document.getElementById('ghj');
+        var gif = document.getElementById('7285a655445f14bd3c368af66035952f_w200.gif');
+
+        video.onplay = function() {
+            message.textContent = 'you cant leave';
+            gif.style.display = 'block';
+        };
+        video.onpause = function() {
+            message.textContent = 'а чо ви зупинили?';
+            gif.style.display = 'none';
+        };
+        video.onended = function() {
+            message.textContent = 'ТИ ЗАРЕКРОЛЕНИЙ хахахахахахахахахахахахахахахахаха';
+        };
+
+    </script>
+    
+    <a href="funny/exe1.html">не виходити</a>
+</body>
+</html>
